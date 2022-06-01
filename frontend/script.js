@@ -6,7 +6,8 @@ googleSearchButton.addEventListener("click", function (event) {
 
   const form = document.querySelector("#form-google-search");
 
-  const searchTerm = form.querySelector('input[name="q"]').value; //megkeressük a form-on belüli input field-et, aminek a neve q és annak vesszük a value-t vagyis az általunk begépelt kifejezést
+  //megkeressük a form-on belüli input field-et, aminek a neve q és annak vesszük a value-t vagyis az általunk begépelt kifejezést
+  const searchTerm = form.querySelector('input[name="q"]').value;
 
   if (searchTerm === "") {
     alert("Írj már be valamit!!");
